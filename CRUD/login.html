@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Inicio de Sesión - CIBERTRON SEGURITY</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2;
+        }
+
+        nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://www.canalgif.net/Gifs-animados/Astronomia/Estrellas/Imagen-animada-Estrella-05.gif)
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+        .login-container {
+            background-image: url(https://media.tenor.com/iBPeA5PKi_oAAAAC/colores-movimiento.gif);
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container img {
+            max-width: 200px;
+            margin: 0 auto 20px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #9d15d3;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            background-color: #00ff80;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #b30095;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>CIBERTRON SEGURITY</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="content">
+                <div class="login-container">
+                    <img src="img/p.jpg" alt="Imagen de inicio de sesión">
+
+                   <form action="login.php" method="post">
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="usuario" required><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" name="contrasena" required><br>
+
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
